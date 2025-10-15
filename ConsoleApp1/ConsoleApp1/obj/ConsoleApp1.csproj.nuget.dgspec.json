@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aytacqeribova/Desktop/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
+    "/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
   },
   "projects": {
-    "/Users/aytacqeribova/Desktop/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
+    "/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aytacqeribova/Desktop/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectUniqueName": "/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "/Users/aytacqeribova/Desktop/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectPath": "/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
         "packagesPath": "/Users/aytacqeribova/.nuget/packages/",
-        "outputPath": "/Users/aytacqeribova/Desktop/ConsoleApp1/ConsoleApp1/obj/",
+        "outputPath": "/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/aytacqeribova/.nuget/NuGet/NuGet.Config"
