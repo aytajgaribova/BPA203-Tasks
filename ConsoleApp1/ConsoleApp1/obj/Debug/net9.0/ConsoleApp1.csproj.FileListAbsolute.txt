@@ -1,0 +1,15 @@
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.deps.json
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.runtimeconfig.json
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.dll
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/ConsoleApp1.pdb
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfoInputs.cache
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.AssemblyInfo.cs
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.sourcelink.json
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.dll
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/refint/ConsoleApp1.dll
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.pdb
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ConsoleApp1.genruntimeconfig.cache
+/Users/aytacqeribova/Desktop/BPA203-Tasks/ConsoleApp1/ConsoleApp1/obj/Debug/net9.0/ref/ConsoleApp1.dll
