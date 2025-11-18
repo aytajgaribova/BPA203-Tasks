@@ -1,0 +1,74 @@
+/* Background + poster container */
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+}
+
+/* Poster */
+.poster {
+    width: 80%;
+    max-width: 800px;
+    background: #ede7dd;
+    padding: 60px 40px 20px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+/* The small top text */
+.small-title {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #a88444;
+    margin-bottom: 10px;
+}
+
+/* Main Hamilton script */
+.main-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    color: #333;
+    margin: -10px 0 10px;
+}
+
+/* FONT FAMILY text */
+.sub-title {
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin-top: 0;
+    color: #a88444;
+}
+
+/* SCRIPT.SERIF.EXTRA */
+.desc {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #333;
+}
+
+/* Crafted ... */
+.crafted {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #6c584c;
+}
+
+/* Bottom brown strip */
+.bottom-strip {
+    margin-top: 40px;
+    background: #b48a52;
+    color: #f8f3ea;
+    padding: 12px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
