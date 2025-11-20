@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ürün Grid - Örnek</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="store-header">
+      <h1 class="store-title">Shop / Ürünler</h1>
+      <div class="controls">
+        <label for="sort">Sırala:</label>
+        <select id="sort">
+          <option>Fiyat: Düşük → Yüksek</option>
+          <option>Fiyat: Yüksek → Düşük</option>
+          <option>En Çok Satanlar</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="product-grid" aria-label="Ürünler">
+    
+      <article class="card">
+        <div class="card-media">
+          <span class="badge">SALE</span>
+          <img src="https://picsum.photos/200/300" alt="Ürün görseli" />
+        </div>
+        <div class="card-body">
+          <h2 class="product-title">Pucci Biker Jacket</h2>
+          <div class="rating" aria-hidden="true">★★★★★</div>
+          <div class="price-wrap">
+            <span class="price">$67.24</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <span class="badge sale">SALE</span>
+          <img src="https://picsum.photos/200/300" alt="Ürün görseli" />
+        </div>
+        <div class="card-body">
+          <h2 class="product-title">Multi-pocket Chest Bag</h2>
+          <div class="rating">★★★★☆</div>
+          <div class="price-wrap"><span class="price">$43.48</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://picsum.photos/200/300" alt="Ürün görseli" />
+        </div>
+        <div class="card-body">
+          <h2 class="product-title">Diagonal Textured Cap</h2>
+          <div class="rating">☆☆☆☆☆</div>
+          <div class="price-wrap"><span class="price">$60.90</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <span class="badge sale">SALE</span>
+          <img src="https://picsum.photos/200/300" alt="Ürün görseli" />
+        </div>
+        <div class="card-body">
+          <h2 class="product-title">Arctic Boots</h2>
+          <div class="rating">★★★★☆</div>
+          <div class="price-wrap"><span class="price">$98.49</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">T-shirt Contrast Pocket</h2>
+          <div class="rating">☆☆☆☆☆</div>
+          <div class="price-wrap"><span class="price">$49.66</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Basic Flowing Scarf</h2>
+          <div class="rating">☆☆☆☆☆</div>
+          <div class="price-wrap"><span class="price">$26.28</span></div>
+        </div>
+      </article>
+
+
+      <article class="card">
+        <div class="card-media"><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Floral Tee</h2>
+          <div class="rating">★★★☆☆</div>
+          <div class="price-wrap"><span class="price">$67.24</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><span class="badge sale">SALE</span><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Fragrance Set</h2>
+          <div class="rating">★★★★☆</div>
+          <div class="price-wrap"><span class="price">$43.48</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Small Backpack</h2>
+          <div class="rating">☆☆☆☆☆</div>
+          <div class="price-wrap"><span class="price">$60.90</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><span class="badge sale">SALE</span><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Camo Jacket</h2>
+          <div class="rating">★★★★☆</div>
+          <div class="price-wrap"><span class="price">$98.49</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Leather Briefcase</h2>
+          <div class="rating">☆☆☆☆☆</div>
+          <div class="price-wrap"><span class="price">$49.66</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><img src="https://picsum.photos/200/300" alt="Ürün görseli" /></div>
+        <div class="card-body">
+          <h2 class="product-title">Cufflinks</h2>
+          <div class="rating">☆☆☆☆☆</div>
+          <div class="price-wrap"><span class="price">$26.28</span></div>
+        </div>
+
+    </section>
+
+    <nav class="pagination" aria-label="Sayfalama">
+      <button class="page-btn is-active" aria-current="page">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <span class="dots">…</span>
+      <button class="page-btn">21</button>
+    </nav>
+  </main>
+</body>
+</html>

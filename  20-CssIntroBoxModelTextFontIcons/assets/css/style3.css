@@ -1,0 +1,26 @@
+.nok{
+    color: blue;
+}
+.ok{
+    color: blue;
+}
+.test{
+ 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.bor{
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+
+}
+.font{
+    font-style: italic;
+    font-size: medium;
+    size: 80px;
+}

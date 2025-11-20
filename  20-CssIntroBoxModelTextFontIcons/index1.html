@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Popup Login Form</title>
+
+  <!-- Google font (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS faylı -->
+  <link rel="stylesheet" href="./assets/css/style1.css">
+</head>
+<body>
+  <main class="page">
+    <!-- fon gradient artıq CSS-dədir -->
+
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">×</button>
+
+      <header class="modal-header">
+        <h1>Login Form</h1>
+      </header>
+
+      <form class="login-form" autocomplete="off" novalidate>
+        <label class="field">
+          <span class="label-text">Email or Phone</span>
+          <input type="text" name="identity" placeholder="Email or Phone" required>
+        </label>
+
+        <label class="field">
+          <span class="label-text">Password</span>
+          <input type="password" name="password" placeholder="Password" required>
+        </label>
+
+        <div class="meta-row">
+          <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn-login">LOGIN</button>
+
+        <p class="signup">Not a member? <a href="#">Signup now</a></p>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
