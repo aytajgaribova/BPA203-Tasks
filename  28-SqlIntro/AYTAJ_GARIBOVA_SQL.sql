@@ -1,0 +1,99 @@
+CREATE DATABASE COMPANY
+USE COMPANY
+CREATE TABLE EMPLOYEES(
+    EMPLOYEEID INT, 
+    FIRSNAME VARCHAR(255),
+    LASTNAME VARCHAR(255),
+    EMAIL VARCHAR(255),
+    PHONENUMBER INT,
+    HIREDATE DATE,
+    JOBTITLE VARCHAR(255),
+    SALARY DECIMAL,
+    DEPARTMENT VARCHAR(50),
+);
+
+INSERT INTO EMPLOYEES (FIRSNAME, LASTNAME, EMAIL, PHONENUMBER, HIREDATE, JOBTITLE, SALARY, DEPARTMENT) VALUES
+( 'Ali','HASANOV', 'ALI@',1234,'1999-05-12', 'IT', 1700, 'FIFTH'),
+( 'Aysel','ALIYEVA', 'AYSEL@', 9876,'2024.12.21' ,'HR', 1200, 'FIRST'),
+( 'Murad','GULIYEVA' ,'MURAD@',4535,'2019.08.20', 'Finance', 2500, 'THIRD'),
+( 'Nermin','ZEYNALLI', 'NERMIN@',7777,'2014.03.29', 'Marketing', 5000, 'FIRST'),
+('Eldar','MECIDOV', 'ELDAR@', 8264, '2024.05.25', 'Logistics', 3500, 'SECOND');
+
+SELECT * FROM EMPLOYEES;
+
+ALTER TABLE EMPLOYEES
+ADD id INT IDENTITY(1,1);
+ALTER TABLE EMPLOYEES
+DROP COLUMN EMPLOYEEID; 
+ALTER TABLE EMPLOYEES
+ADD CONSTRAINT PK_Employees_id PRIMARY KEY (id);
+
+SELECT * FROM Employees
+WHERE Salary > 2000;
+
+SELECT * FROM Employees
+WHERE Department = 'IT';
+
+SELECT * FROM Employees
+ORDER BY Salary DESC;
+
+SELECT FirstName, Salary FROM Employees;
+
+SELECT * FROM Employees
+WHERE HireDate > '2020-01-01';
+
+SELECT * FROM Employees
+WHERE Email LIKE '%company.az';
+
+SELECT MAX(Salary) AS MaxSalary FROM Employees;
+SELECT MIN(Salary) AS MinSalary FROM Employees;
+SELECT AVG(Salary) AS AverageSalary FROM Employees;
+SELECT COUNT(*) AS EmployeeCount FROM Employees;
+SELECT SUM(Salary) AS TotalSalary FROM Employees;
+
+SELECT Department, COUNT(*) AS EmployeeCount
+FROM Employees
+GROUP BY Department;
+
+SELECT Department, AVG(Salary) AS AvgSalary
+FROM Employees
+GROUP BY Department;
+
+SELECT Department, MAX(Salary) AS MaxSalary
+FROM Employees
+GROUP BY Department;
+
+UPDATE Employees
+SET Salary = 2800
+WHERE EmployeeID = 1;
+
+UPDATE Employees
+SET Salary = Salary * 1.10
+WHERE Department = 'IT';
+
+UPDATE Employees
+SET JobTitle = 'HR Meneceri'
+WHERE FIRSNAME = 'Leyla' AND LASTNAME = 'Hesenova';
+
+DELETE FROM Employees
+WHERE EmployeeID = 5;
+
+INSERT INTO Employees 
+(FIRSNAME, LASTNAME, EMAIL, PHONENUMBER, HIREDATE, JOBTITLE, SALARY, DEPARTMENT)
+VALUES ('Sahil', 'Mehdiyev', 'sahil@company.az', '0558001122', '2023-06-01', 'Intern', 1200, 'IT');
+
+DELETE FROM EMPLOYEES
+WHERE Salary < 1500;
+
+
+SELECT * FROM Employees
+WHERE FIRSNAME LIKE '%a%' OR LASTNAME LIKE '%a%';
+
+SELECT * FROM Employees
+WHERE Salary BETWEEN 2000 AND 2500;
+
+SELECT * FROM Employees
+WHERE Department IN ('Finance', 'IT');
+
+
+
