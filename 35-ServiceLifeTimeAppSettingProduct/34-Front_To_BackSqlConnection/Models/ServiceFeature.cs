@@ -1,6 +1,5 @@
-using System.Models.Base;
 using task777.Models.Base;
-namespace 34-Front_To_BackSqlConnection.Models
+namespace task777.Models
 {
 public class ServiceFeature : baseentity
 {

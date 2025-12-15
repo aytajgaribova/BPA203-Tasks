@@ -1,12 +1,9 @@
-using System;
-using Microsoft.EntityFrameworkCore;
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppContext>(opt =>
-opt.UseSqlServer("server=SAMA;database=ProniaBPA203DB;trusted_connection=true;trustServerCertificate=true"));
+opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
+);
 
 var app = builder.Build();
 
