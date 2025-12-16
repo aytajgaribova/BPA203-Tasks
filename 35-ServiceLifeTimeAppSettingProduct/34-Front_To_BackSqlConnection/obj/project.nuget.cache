@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "yCKu+1k2/bE=",
-  "success": true,
-  "projectFilePath": "/Users/aytacqeribova/Desktop/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
-  "expectedPackageFiles": [
-    "/Users/aytacqeribova/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.1/microsoft.entityframeworkcore.tools.10.0.1.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "DgW68XJJjfc=",
+  "success": false,
+  "projectFilePath": "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.\n  nodename nor servname provided, or not known (api.nuget.org:443)\n  nodename nor servname provided, or not known",
+      "projectPath": "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
+      "filePath": "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": []
+    }
+  ]
 }

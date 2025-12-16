@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aytacqeribova/Desktop/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj": {}
+    "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj": {}
   },
   "projects": {
-    "/Users/aytacqeribova/Desktop/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj": {
+    "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aytacqeribova/Desktop/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
+        "projectUniqueName": "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
         "projectName": "34-Front_To_BackSqlConnection",
-        "projectPath": "/Users/aytacqeribova/Desktop/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
+        "projectPath": "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection.csproj",
         "packagesPath": "/Users/aytacqeribova/.nuget/packages/",
-        "outputPath": "/Users/aytacqeribova/Desktop/34-Front_To_BackSqlConnection/34-Front_To_BackSqlConnection/obj/",
+        "outputPath": "/Users/aytacqeribova/Desktop/35-ServiceLifeTimeAppSettingProduct/34-Front_To_BackSqlConnection/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/aytacqeribova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -41,14 +41,22 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[8.0.8, )"
             }
           },
           "imports": [

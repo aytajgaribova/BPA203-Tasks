@@ -16,7 +16,7 @@ namespace task777.Controllers
         public IActionResult Index()
         {
             List<Slider> sliders= _context.Sliders.OrderBy(s=>s.Order).ToList();
-             List< Product> products= _context.Products.Include(p=>p.ProductImages ).ToList();
+             List< Product> products= _context.Products.Include(p=>p.ProductImages.Where(pi=>pi.IsPrimary != null) ).ToList();
   
            
             HomeVM homeVM = new HomeVM
@@ -25,10 +25,8 @@ namespace task777.Controllers
              Products=products, 
             };
 
+            return View(homeVM);
 
-            var features = await _context.ServiceFeature.OrderBy(f => f.order).ToListAsync();
-
-            return View(features);
         }
 
 
