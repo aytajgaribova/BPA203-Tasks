@@ -15,14 +15,14 @@ namespace task777.Controllers
         }
         public IActionResult Index()
         {
-            List<Slider> sliders= _context.Sliders.OrderBy(s=>s.Order).ToList();
-             List< Product> products= _context.Products.Include(p=>p.ProductImages.Where(pi=>pi.IsPrimary != null) ).ToList();
+            // List<Slider> sliders= _context.Sliders.OrderBy(s=>s.Order).ToList();
+            // List< Product> products= _context.Products.Include(p=>p.ProductImages.Where(pi=>pi.IsPrimary != null) ).ToList();
   
            
             HomeVM homeVM = new HomeVM
             {
-             Sliders=sliders,
-             Products=products, 
+            //  Sliders=sliders,
+            //  Products=products, 
             };
 
             return View(homeVM);

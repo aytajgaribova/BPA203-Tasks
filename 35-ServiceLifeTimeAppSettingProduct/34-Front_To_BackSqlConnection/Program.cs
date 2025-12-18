@@ -1,12 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using task777.DAL;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppContext>(opt =>
+builder.Services.AddDbContext<AppDbContext>(opt =>
 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
 );
-
 var app = builder.Build();
-
 
 using (var scope = app.Services.CreateScope())
 {
@@ -23,10 +24,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization()
+app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: default,
+    name: "default",
     pattern: "{controller=home}/{action=index}/{id?}"
     );
 

@@ -2,7 +2,7 @@ using task777.Models.Base;
 
 namespace task777.Models
 {
-    public class Product : baseentity
+    public class Product : BaseEntity
     {
         public string Name { get; set; }
         public decimal Price { get; set; }
