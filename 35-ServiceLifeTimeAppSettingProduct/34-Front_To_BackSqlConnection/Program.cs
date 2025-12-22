@@ -21,10 +21,13 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+app.MapControllerRoute(
+    "admin",
+    "{area:exists}/{controller=dashboard}/{action=index}/{id?}"
+    );
 
-app.UseRouting();
 
-app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",
