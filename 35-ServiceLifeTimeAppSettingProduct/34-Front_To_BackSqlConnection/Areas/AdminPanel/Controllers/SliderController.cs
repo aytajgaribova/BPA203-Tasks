@@ -4,6 +4,9 @@ using Front_To_Back_.Utilities.Enums;
 using Front_To_Back_.Utilities.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using task777.AdminPanel.ViewModels;
+using task777.AdminPanel.ViewModels.sliders;
+using task777.Models;
 
 namespace Front_To_Back_.Areas.AdminPanel.Controllers
 {
@@ -32,23 +35,33 @@ namespace Front_To_Back_.Areas.AdminPanel.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Slider slider)
+        public async Task<IActionResult> Create(SliderCreateVM sliderCreateVM)
         {
-            if (!slider.Photo.ValidatorType("image/"))
+            if(!ModelState.IsValid) return View();
+
+
+            if (!sliderCreateVM.Photo.ValidatorType("image/"))
             {
                 ModelState.AddModelError("Photo", "File type is incorrect!");
                 return View();
             }
 
-            if (!slider.Photo.ValidatorSize(FileSize.MB, slider.Photo.Length))
+            if (!sliderCreateVM.Photo.ValidatorSize(FileSize.MB, sliderCreateVM.Photo.Length))
             {
                 ModelState.AddModelError("Photo", "File size must be less than 2 mb");
                 return View();
             }
 
-            if(!ModelState.IsValid) return View();
+            Slider slider=new Slider();
+            {
+                Title= sliderCreateVM.Title,
+                SubTitle=sliderCreateVM.SubTitle,
+                Description=sliderCreateVM.Description,
+                Order=sliderCreateVM.Order,
+                ImageURL= await sliderCreateVM.Photo.CreateFileAsync(_env.WebRootPath,"assets","Images","website-images")
+            };
 
-            slider.ImageURL = await slider.Photo.CreateFileAsync(_env.WebRootPath,"assets","Images","website-images");
+
 
             await _context.Sliders.AddAsync(slider);
 
@@ -61,19 +74,54 @@ namespace Front_To_Back_.Areas.AdminPanel.Controllers
         {
             if (id is null || id < 1) return BadRequest();
 
-            Slider slider  = await _context.Sliders.FirstOrDefaultAsync(s=>s.Id == id);
+            SliderCreateVM sliderCreateVM  = await _context.SliderCreateVM.FirstOrDefaultAsync(s=>s.Id == id);
 
-            if (slider == null) return NotFound();
+            if (sliderCreateVM == null) return NotFound();
 
-            slider.ImageURL.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
+            sliderCreateVM.ImageURL.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
 
-            _context.Sliders.Remove(slider);
+            _context.Sliders.Remove(sliderCreateVM);
 
             await _context.SaveChangesAsync(); 
 
             return RedirectToAction(nameof(Index));
       
         }
+
+       public async Task<IActionResult> Update(int? id, SliderUpdateVM sliderUpdateVM)
+       {
+         if (id is null || id < 1) return BadRequest();
+
+            Slider slider  = await _context.Sliders.FirstOrDefaultAsync(s=>s.Id == id);
+
+            if (slider == null) return NotFound();
+
+            SliderUpdateVM sliderUpdateVM1=new();
+            {
+                Title= sliderUpdateVM.Title,
+                SubTitle=sliderUpdateVM.SubTitle,
+                Description=sliderUpdateVM.Description,
+                Order=sliderUpdateVM.Order,
+                ImageURL= await sliderUpdateVM.Photo.CreateFileAsync(_env.WebRootPath,"assets","Images","website-images")
+            };
+
+
+            if (!ModelState.IsValid)
+            {
+                
+             return View(SliderUpdateVM);
+            }
+
+        if(sliderUpdateVM.Photo is not null)
+            {
+                if (!sliderUpdateVM.Photo.CheckFileType("image/"))
+                {
+                    ModelState.AddModelError(nameof(sliderUpdateVM.Photo), "File type is incorrect");
+                    return View();
+                }
+
+            }
+       }
 
     }
 }
